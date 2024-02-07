@@ -9,6 +9,6 @@ public class PasswordRequest {
     private boolean lowercase;
     private boolean uppercase;
     private boolean numbers;
-    private boolean specialCharacters;
+    private boolean specialChars;
 
 }

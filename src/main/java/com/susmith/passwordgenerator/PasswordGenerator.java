@@ -23,11 +23,11 @@ public class PasswordGenerator {
         if(passwordRequest.isNumbers()){
             charSet.append(numberChars);
         }
-        if(passwordRequest.isSpecialCharacters()){
+        if(passwordRequest.isSpecialChars()){
             charSet.append(specialChars);
         }
 
-        if(charSet.length()==0){
+        if(charSet.isEmpty()){
             throw new IllegalArgumentException("Please select at least one character set. ");
         }
 

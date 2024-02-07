@@ -12,8 +12,7 @@ public class PasswordController {
     @PostMapping("/generate")
     public String generatePassword(@RequestBody PasswordRequest passwordRequest){
         try{
-            String generatedPassword = PasswordGenerator.generate(passwordRequest);
-            return generatedPassword;
+            return PasswordGenerator.generate(passwordRequest);
         }
         catch (IllegalArgumentException e){
             return e.getMessage();

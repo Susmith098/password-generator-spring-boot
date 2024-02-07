@@ -1,4 +1,4 @@
-files to ignore
+#files to ignore
 application.properties
 
 HELP.md
